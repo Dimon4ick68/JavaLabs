@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: PersonTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.315 s <<< FAILURE! -- in PersonTest
+PersonTest.testEqualsAndHashCodeContract -- Time elapsed: 0.282 s <<< FAILURE!
+java.lang.AssertionError: 
+EqualsVerifier found a problem in class com.example.Person.
+-> Mutability: equals depends on mutable field lastName.
+Make the field final, suppress Warning.NONFINAL_FIELDS or use EqualsVerifier.simple()
+
+For more information, go to: https://www.jqno.nl/equalsverifier/errormessages
+(EqualsVerifier 3.15.5, JDK 17.0.8 on Windows 10)
+	at nl.jqno.equalsverifier.api.SingleTypeEqualsVerifierApi.verify(SingleTypeEqualsVerifierApi.java:349)
+	at PersonTest.testEqualsAndHashCodeContract(PersonTest.java:20)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: nl.jqno.equalsverifier.internal.exceptions.AssertionException
+	at nl.jqno.equalsverifier.internal.util.Assert.fail(Assert.java:64)
+	at nl.jqno.equalsverifier.internal.checkers.fieldchecks.MutableStateFieldCheck.execute(MutableStateFieldCheck.java:57)
+	at nl.jqno.equalsverifier.internal.checkers.FieldInspector.check(FieldInspector.java:29)
+	at nl.jqno.equalsverifier.internal.checkers.FieldsChecker.check(FieldsChecker.java:73)
+	at nl.jqno.equalsverifier.api.SingleTypeEqualsVerifierApi.verifyWithExamples(SingleTypeEqualsVerifierApi.java:466)
+	at nl.jqno.equalsverifier.api.SingleTypeEqualsVerifierApi.performVerification(SingleTypeEqualsVerifierApi.java:420)
+	at nl.jqno.equalsverifier.api.SingleTypeEqualsVerifierApi.verify(SingleTypeEqualsVerifierApi.java:347)
+	... 4 more
+

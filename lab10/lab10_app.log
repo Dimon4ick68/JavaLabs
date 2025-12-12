@@ -1,0 +1,14 @@
+груд. 13, 2025 1:09:41 ДП com.example.Main main
+INFO: Application started
+груд. 13, 2025 1:09:45 ДП com.example.Main changeLanguage
+INFO: Language changed to uk
+груд. 13, 2025 1:13:18 ДП com.example.Main main
+INFO: Application started
+груд. 13, 2025 1:13:22 ДП com.example.Main changeLanguage
+INFO: Language changed to uk
+груд. 13, 2025 1:13:24 ДП com.example.Main changeLanguage
+INFO: Language changed to en
+груд. 13, 2025 1:13:57 ДП com.example.Encryptor processFile
+INFO: Start processing file. Mode: Encrypt, Src: D:\Desktop\JavaLabs\lab10\test.txt
+груд. 13, 2025 1:13:57 ДП com.example.Encryptor processFile
+INFO: File successfully processed to: D:\Desktop\JavaLabs\lab10\enc.txt
